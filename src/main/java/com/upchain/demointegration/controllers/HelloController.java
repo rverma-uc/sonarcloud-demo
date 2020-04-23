@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
+    private String testUnusedVar;
+
     @RequestMapping("/")
     public String index() {
         return "This is a demo app to test dev tools integration.";
